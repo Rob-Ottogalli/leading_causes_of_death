@@ -1,5 +1,5 @@
-# leading_causes_of_death
-Determine greatest causes of death in US from 2005-2015
+# Proposal
+To determine the leading causes of death in the US from 2013-2015
 
 Our project will analyze mortality in America from 2013 to 2015, specifically with regards to: 
 * Seasonal impact on mortality, 
