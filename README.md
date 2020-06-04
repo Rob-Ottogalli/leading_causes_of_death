@@ -2,10 +2,10 @@
 Determine greatest causes of death in US from 2005-2015
 
 Our project will analyze mortality in America from 2013 to 2015, specifically with regards to: 
-*Seasonal impact on mortality, 
-*Women's education impact on child mortality, 
-*Impact of college education on mortality, and 
-*Impact of marital status, gender and cardiovascular mortality.
+* Seasonal impact on mortality, 
+* Women's education impact on child mortality, 
+* Impact of college education on mortality, and 
+* Impact of marital status, gender and cardiovascular mortality.
 
 By analyzing this topic: our app will identify trends that public health officials will be able to use to optimize future spending to improve public health outcomes. 
 
