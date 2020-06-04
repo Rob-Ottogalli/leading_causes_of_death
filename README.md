@@ -12,7 +12,7 @@ By analyzing this topic: our app will identify trends that public health officia
 Link to data: [https://www.kaggle.com/cdc/mortality?select=2005_codes.json]
 
 Visualization of Dashboard
-![](Images/Dashboard Diagram.PNG)
+![](Images/Dashboard_Diagram.PNG)
 
 Plot 1: Mother’s Education on Child Mortality
 
