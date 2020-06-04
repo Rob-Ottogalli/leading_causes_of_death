@@ -11,13 +11,5 @@ By analyzing this topic: our app will identify trends that public health officia
 
 Link to data: [https://www.kaggle.com/cdc/mortality?select=2005_codes.json]
 
-Visualization of Dashboard
+Visualization of Dashboard (and Inspiring Visualizations)
 ![](Images/Dashboard_Diagram.PNG)
-
-Plot 1: Mother’s Education on Child Mortality
-
-Plot 2:  Impact of Education on Mortality
-Plot 3: Impact of Season on Mortality
-
-Plot 4: Impact of Marital Status, Gender, Health Condition
-
