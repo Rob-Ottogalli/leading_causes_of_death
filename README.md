@@ -11,7 +11,11 @@ Our project will analyze mortality in America from 2013 to 2015, specifically wi
 ## Hypothesis
 * Many causes of death have a clear seasonal pattern.
 * As education level increases in women child mortality tends to reduce.
+
+* As education level increases, cancer and heart disease mortality rates will decrease
 * An additional year of college decreases mortality rates by 15 to 19 percent by reducing deaths from cancer and heart disease.
+* Someone who completed High School, but did not attend college will be higher than those of those who attended some college/bachlors/masters/doctorate. 
+
 * The risk of cardiovascular mortality is greater in single, never married men and separated/divorced women compared with those that are married.
 
 By analyzing this topic: our app will identify trends that public health officials will be able to use to optimize future spending to improve public health outcomes the scenarios. 
