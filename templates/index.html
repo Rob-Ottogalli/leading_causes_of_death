@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leading Causes of Death</title>
+    <!-- Include D3 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.12.0/d3.min.js"></script>
+    <!-- Include Bootstrap formatting -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Update the path to paid tableau js library-->
     <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
     <!-- <script src="https://online.tableau.com/javascripts/api/tableau-version.min.js"></script> -->
@@ -16,26 +20,43 @@
 </head>
 
 <body onload="initViz();">
-    <div id="vizContainer" style="width:800px; height:700px;"></div>
-
-    <script>
-        function initViz() {
-            var containerDiv = document.getElementById("vizContainer"),
-                //public.tableau
-                url = "https://public.tableau.com/views/DeathsPerGender/Sheet1?:display_count=y&publish=yes&:origin=viz_share_link"
-
-                // tableau online
-                // url = "https://prod-useast-a.online.tableau.com/t/analyzingleadingdeathcauseinus/views/DeathsPerGender/Sheet1?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link"
-            options = {
-                hideTabs: true,
-                onFirstInteractive: function() {
-                    console.log("Run this code when the viz has finished loading.");
-                }
-            };
-            // Create a viz object and embed it in the container div.
-            var viz = new tableau.Viz(containerDiv, url, options);
-        }
-    </script>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 jumbotron text-center">
+              <h1>Leading Causes of Death Dashboard</h1>
+              <p>Use the interactive charts below to explore the dataset</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Impact of Education on Overall Mortality</h2>
+                <div id="vizContainer1" style="width:500px; height:500px;"></div>
+            </div>
+            <div class="col-md-6">
+                <h2>Impact of Education on Infant Mortality</h2>
+                <div id="vizContainer2" style="width:500px; height:500px;"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Impact of Season on Overall Mortality</h2>
+                <div id="vizContainer3" style="width:500px; height:500px;"></div>
+            </div>
+            <div class="col-md-6">
+                <h2>Impact of Marital Status on Mortality</h2>
+                <div id="vizContainer4" style="width:500px; height:500px;"></div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <div>
+            <footer>
+                Courtesy of US Centers for Disease Control mortality data found on <a href="https://www.kaggle.com/cdc/mortality">Kaggle.com</a>
+            </footer>
+        </div>
+    </div>
+    <script src="../static/js/plots.js"></script>
 </body>
 
 </html>
