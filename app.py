@@ -1,4 +1,6 @@
 from sqlalchemy import func
+import pandas as pd
+from sqlalchemy import create_engine
 from flask import (
     Flask,
     render_template,
@@ -13,6 +15,19 @@ app = Flask(__name__)
 #################################################
 # Database Setup
 #################################################
+
+engine = create_engine("sqlite:///titanic.sqlite")
+
+# reflect an existing database into a new model
+Base = automap_base()
+
+# reflect the tables
+Base.prepare(engine, reflect=True)
+
+# Save reference to the table
+Passenger = Base.classes.passenger
+
+
 
 app.config['SQLALCHEMY_DATABASE_URI'] = "path_to/postgresdb"
 db = SQLAlchemy(app)
