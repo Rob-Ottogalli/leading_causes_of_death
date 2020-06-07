@@ -14,21 +14,38 @@
     <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
     <!-- <script src="https://online.tableau.com/javascripts/api/tableau-version.min.js"></script> -->
     <!-- <script src="https://online.tableau.com/javascripts/api/tableau-2.min.js"></script> -->
-
-    <title>Document</title>
-
 </head>
 
 <body onload="initViz();">
+
     <div class="container">
+
+
         <div class="row">
             <div class="col-md-12 jumbotron text-center">
               <h1>Leading Causes of Death Dashboard</h1>
               <p>Use the interactive charts below to explore the dataset</p>
             </div>
         </div>
+        <!-- <nav id="navbar-example2" class="navbar navbar-light bg-light navbar-fixed-top">
+            <a class="navbar-brand" href="navbar-example2">Navbar</a>
+            <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#cardiovascular">Cardiovascular</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#infants">Infant</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#seasons">Seasons</a>
+            </li>
+            </ul>
+        </nav>         -->
         <hr>
-        <h2>Mortality and Cardiovascular Disease</h2>
+        <h2 id="cardiovascular">Mortality and Cardiovascular Disease</h2>
         <br>
         <div class="row">
             <div class="col-md-6">
@@ -37,14 +54,14 @@
                 </p>
             </div>
             <div class="col-md-6">
-                <h3>Marital Status, Age, and Cardiovascular Mortality</h3>
+                <h3>Age and Cardiovascular Mortality</h3>
                 <div id="vizContainer1" style="width:500px; height:500px;"></div>
             </div>
         </div>
         <br>
         <div class="row">            
             <div class="col-md-6">
-                <h3>Marital Status, Sex, and Cardiovascular Mortality</h3>
+                <h3>Marital Status and Cardiovascular Mortality</h3>
                 <div id="vizContainer2" style="width:500px; height:500px;"></div>
             </div>
             <div class="col-md-6">
@@ -54,7 +71,7 @@
         </div>
         <br>
         <hr>
-        <h2>Mortality and Education Level</h2>
+        <h2 id="education">Mortality and Education Level</h2>
         <br>
         <div class="row">
             <div class="col-md-6">
@@ -74,13 +91,12 @@
                 <div id="vizContainer4" style="width:500px; height:500px;"></div>
             </div>
             <div class="col-md-6">
-                <p>More men die from cardiovascular disease while they are married. 
-                 More women die from cardiovascular disease when they are widowed. </p>
+                <p>Placeholder text</p>
             </div>
         </div>
         <br>
         <hr>
-        <h2>Mortality and Infants</h2>
+        <h2 id="infants">Mortality and Infants</h2>
         <br>
         <div class="row">
             <div class="col-md-6">
@@ -100,23 +116,22 @@
                 <div id="vizContainer6" style="width:500px; height:500px;"></div>
             </div>
             <div class="col-md-6">
-                <p>More men die from cardiovascular disease while they are married. 
-                 More women die from cardiovascular disease when they are widowed. </p>
+                <p>Placeholder text</p>
             </div>
         </div>
         <br>
         <hr>
-        <h2>Mortality and the Seasons</h2>
+        <h2 id="seasons">Mortality and the Seasons</h2>
         <br>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-3">
                 <p>
                     Placeholder text
                 </p>
             </div>
-            <div class="col-md-6">
-                <h3>Marital Status, Age, and Cardiovascular Mortality</h3>
-                <div id="vizContainer7" style="width:500px; height:500px;"></div>
+            <div class="col-md-9">
+                <h3>Mortality by Month</h3>
+                <div id="vizContainer7" style="width:900px; height:300px;"></div>
             </div>
         </div>
         <br>
@@ -126,8 +141,7 @@
                 <div id="vizContainer8" style="width:500px; height:500px;"></div>
             </div>
             <div class="col-md-6">
-                <p>More men die from cardiovascular disease while they are married. 
-                 More women die from cardiovascular disease when they are widowed. </p>
+                <p>Placeholder text</p>
             </div>
         </div>
         <br>

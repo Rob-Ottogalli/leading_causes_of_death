@@ -73,7 +73,7 @@ function initViz() {
     };
     var containerDiv7 = document.getElementById("vizContainer7"),
         //public.tableau
-        url7 = "https://public.tableau.com/views/DeathsPerGender/Sheet1?:display_count=y&publish=yes&:origin=viz_share_link"
+        url7 = "https://public.tableau.com/shared/YX6YJTWH4?:display_count=y&:origin=viz_share_link"
 
         // tableau online
         // url7 = "https://prod-useast-a.online.tableau.com/t/analyzingleadingdeathcauseinus/views/DeathsPerGender/Sheet1?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link"
