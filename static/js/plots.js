@@ -25,7 +25,7 @@ function initViz() {
     };
     var containerDiv3 = document.getElementById("vizContainer3"),
         //public.tableau
-        url3 = "https://public.tableau.com/views/DeathsPerGender/Sheet1?:display_count=y&publish=yes&:origin=viz_share_link"
+        url3 = "https://public.tableau.com/views/MainMortality/Agevs_Education?:display_count=y&publish=yes&:origin=viz_share_link"
 
         // tableau online
         // url3 = "https://prod-useast-a.online.tableau.com/t/analyzingleadingdeathcauseinus/views/DeathsPerGender/Sheet1?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link"
@@ -49,8 +49,8 @@ function initViz() {
     };
     var containerDiv5 = document.getElementById("vizContainer5"),
         //public.tableau
-        url5 = "https://public.tableau.com/views/DeathsPerGender/Sheet1?:display_count=y&publish=yes&:origin=viz_share_link"
-
+        url5 = "https://public.tableau.com/views/MainMortality/InfantAge?:display_count=y&publish=yes&:origin=viz_share_link"
+        
         // tableau online
         // url5 = "https://prod-useast-a.online.tableau.com/t/analyzingleadingdeathcauseinus/views/DeathsPerGender/Sheet1?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link"
     options = {
@@ -61,7 +61,7 @@ function initViz() {
     };
     var containerDiv6 = document.getElementById("vizContainer6"),
         //public.tableau
-        url6 = "https://public.tableau.com/views/DeathsPerGender/Sheet1?:display_count=y&publish=yes&:origin=viz_share_link"
+        url6 = "https://public.tableau.com/views/MainMortality/InfantCause?:display_count=y&publish=yes&:origin=viz_share_link"
 
         // tableau online
         // url6 = "https://prod-useast-a.online.tableau.com/t/analyzingleadingdeathcauseinus/views/DeathsPerGender/Sheet1?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link"
@@ -73,7 +73,7 @@ function initViz() {
     };
     var containerDiv7 = document.getElementById("vizContainer7"),
         //public.tableau
-        url7 = "https://public.tableau.com/shared/YX6YJTWH4?:display_count=y&:origin=viz_share_link"
+        url7 = "https://public.tableau.com/views/MainMortality/OverallSeasonvs_Mortality?:display_count=y&publish=yes&:origin=viz_share_link"
 
         // tableau online
         // url7 = "https://prod-useast-a.online.tableau.com/t/analyzingleadingdeathcauseinus/views/DeathsPerGender/Sheet1?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link"
@@ -104,6 +104,14 @@ function initViz() {
     var viz6 = new tableau.Viz(containerDiv6, url6, options);
     var viz7 = new tableau.Viz(containerDiv7, url7, options);
     var viz8 = new tableau.Viz(containerDiv8, url8, options);
+    
+
 }
 
-// initViz();
+function switchToInfantAgeTab() {
+    workbook.activateSheetAsync("Infant Age");
+}
+
+function switchToInfantCauseTab() {
+    workbook.activateSheetAsync("Infant Cause");
+}   
