@@ -85,7 +85,7 @@ function initViz() {
     };
     var containerDiv8 = document.getElementById("vizContainer8"),
         //public.tableau
-        url8 = "https://public.tableau.com/views/DeathsPerGender/Sheet1?:display_count=y&publish=yes&:origin=viz_share_link"
+        url8 = "https://public.tableau.com/views/MainMortality/Seasonvs_Cause?:display_count=y&publish=yes&:origin=viz_share_link"
 
         // tableau online
         // url8 = "https://prod-useast-a.online.tableau.com/t/analyzingleadingdeathcauseinus/views/DeathsPerGender/Sheet1?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link"
@@ -94,7 +94,19 @@ function initViz() {
         onFirstInteractive: function() {
             console.log("Run this code when the viz has finished loading.");
         }
-    };          
+    };
+    var containerDiv9 = document.getElementById("vizContainer9"),
+        //public.tableau
+        url9 = "https://public.tableau.com/views/MainMortality/Seasonvs_Top5Cause?:display_count=y&publish=yes&:origin=viz_share_link"
+
+        // tableau online
+        // url9 = "https://prod-useast-a.online.tableau.com/t/analyzingleadingdeathcauseinus/views/DeathsPerGender/Sheet1?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link"
+    options = {
+        hideTabs: true,
+        onFirstInteractive: function() {
+            console.log("Run this code when the viz has finished loading.");
+        }
+    };  
     // Create a viz object and embed it in the container div.
     var viz1 = new tableau.Viz(containerDiv1, url1, options);
     var viz2 = new tableau.Viz(containerDiv2, url2, options);
@@ -104,7 +116,7 @@ function initViz() {
     var viz6 = new tableau.Viz(containerDiv6, url6, options);
     var viz7 = new tableau.Viz(containerDiv7, url7, options);
     var viz8 = new tableau.Viz(containerDiv8, url8, options);
-    
+    var viz9 = new tableau.Viz(containerDiv9, url9, options);
 
 }
 
