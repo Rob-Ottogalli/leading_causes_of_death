@@ -37,7 +37,7 @@ url9 = "https://public.tableau.com/views/MainMortality/Seasonvs_Top5Cause?:displ
 var infantList = [url5, url6];
 var vizLen = infantList.length;
 var vizCount = 0;
-var viz5;
+var viz5 = 0;
 
 options = {
     hideTabs: true,
@@ -62,25 +62,24 @@ function initViz() {
 }
 
 function switchInfantTab(vizPlusMinus) {
-    vizCount = vizCount + vizPlusMinus;
+    var containerDiv5 = document.getElementById("vizContainer5");
 
+    vizCount = vizCount + vizPlusMinus;
+    
     if (vizCount >= vizLen) {
     // Keep the vizCount in the bounds of the array index.
         vizCount = 0;
     } else if (vizCount < 0) {
         vizCount = vizLen - 1;
     }
+    
+    if (containerDiv5) { // If a viz object exists, delete it.
+        containerDiv5 = containerDiv5.innerHTML = "";
+        // document.getElementById("vizContainer5");
 
-    if (viz5) { // If a viz object exists, delete it.
-        viz5.dispose();
     }
 
     var vizURL = infantList[vizCount];
 
-    var viz5 = new tableau.Viz(containerDiv5, vizURL, options);
+    var viz10 = new tableau.Viz(containerDiv5, "https://public.tableau.com/shared/H8XTZR7ZH?:display_count=y&:origin=viz_share_link", options);
 }
-
-
-
-// Kensuke's links
-var deathsByMaritalStatus = "https://public.tableau.com/profile/kensuke.suzuki#!/vizhome/NumberofDeathsperMaritalStatuswithInteractivity/Sheet6?publish=yes"
