@@ -36,9 +36,6 @@ url9 = "https://public.tableau.com/views/TopDeathsperseasonperagepergender/TopDe
 
 options = {
     hideTabs: true,
-    // onFirstInteractive: function() {
-    //     console.log("Run this code when the viz has finished loading.");
-    // }
 };
 
 function initViz() {
