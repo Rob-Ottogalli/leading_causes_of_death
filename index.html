@@ -11,11 +11,8 @@
     <!-- Include Bootstrap formatting -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/js/stylesheet.css">
-    <!-- <script src="jquery-3.5.1.min.js"></script> -->
     <!-- Update the path to paid tableau js library-->
     <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
-    <!-- <script src="https://online.tableau.com/javascripts/api/tableau-version.min.js"></script> -->
-    <!-- <script src="https://online.tableau.com/javascripts/api/tableau-2.min.js"></script> -->
 </head>
 
 <body onload="initViz();">
@@ -52,8 +49,13 @@
         <div class="row">
             <div class="col-md-3">
                 <p class="central">
-                    Placeholder text
+                    Select the manner of death from the boxes at right to see the number of deaths per month.
                 </p>
+                <ul>
+                    <li>The greatest number of deaths occur from natural causes. The highest concentration occur in colder months of January, December, and March.</li>
+                    <li>The second greatest number of deaths occurs from undetermined causes. The higest concentration is also durding January, December, and March.</li>
+                    <li>Deaths by homicide or suicide have their lowest counts in February and highest counts in August.</li>
+                </ul>
             </div>
             <div class="col-md-9">
                 <h3>Mortality by Month</h3>
@@ -67,17 +69,27 @@
                 <div id="vizContainer8" style="width:900px; height:500px;"></div>
             </div>
             <div class="col-md-3">
-                <p  class="central">Placeholder text</p>
+                <p  class="central">To view a specific cause of death, enter your search term in the "Specific Cause of Death" search field at left.</p>
             </div>
         </div>
         <br>
+        <hr>
+        <h2 id="seasons">Top 5 Causes of Death</h2>
+        <br>        
         <div class="col-md-3">
             <p>
                 Expand the table at right to see the top 5 causes of death in full view.
+                The default view shows the top 5 causes of death for groups age 20-35.
+                Choose the "Detail Age" check boxes to modify the desired age group (each number represents a year).
             </p>
+            <ul>
+                <li>The most common cause of death across all seasons for ages 20-35 is accidental poisoning due to drug overdose.</li>
+                <li>Men are more likely to die of the top 5 causes of death for ages 20-35.</li>
+                <li>For age groups 45-60, the most common causes of death are predominantly related to heart and lung disease. Drug overdose is still a major contributor to death counts.</li>
+            </ul>
         </div>
         <div class="col-md-9">
-            <h3>Top 5 Causes of Death</h3>
+            <h3>Top 5 Causes of Death per Season</h3>
             <div id="vizContainer9" style="width:900px; height:500px;"></div>
         </div>
         <br>
@@ -86,9 +98,8 @@
         <br>
         <div class="row">
             <div class="col-md-3">
-                <p>
-                    Placeholder text
-                </p>
+                <p>The following two plots detail the relationship between marital status, sex/gender, and mortality.</p>
+                <p>Men are more likely to die while they are married, but women are more likely to die when they are widowed. This is most likely due to the shorter average life span of men: if married men die, they will often leave behind a spouse who will die without remarrying and therefore will be classed under the widowed category.</p>
             </div>
             <div class="col-md-9">
                 <h3>Marital Status and Manner of Death</h3>
@@ -98,12 +109,10 @@
         <br>
         <div class="row">            
             <div class="col-md-9">
-                <h3>Marital Status and Sex</h3>
+                <h3>Marital Status and Sex/Gender</h3>
                 <div id="vizContainer2" style="width:900px; height:500px;"></div>
             </div>
             <div class="col-md-3">
-                <p>More men die while they are married. 
-                 More women die when they are widowed. </p>
             </div>
         </div>
         <br>
@@ -113,8 +122,12 @@
         <div class="row">
             <div class="col-md-3">
                 <p>
-                    Placeholder text
+                    View the most common causes of death for each education level. Select the desired education level from the dropdown at right.
                 </p>
+                <ul>
+                    <li>The greatest number of deaths is recorded for those whose highest level of education is high school. This is most likely due to a greater number people completing a high school than any other level of education.</li>
+                    <li>The leading cause of death is ischemic heart disease, followed by cancer of the lung, trachea, and bronhus.</li>
+                </ul>
             </div>
             <div class="col-md-9">
                 <h3>Education and Cause of Death</h3>
@@ -128,17 +141,18 @@
         <div class="row">
             <div class="col-md-3">
                 <p>
-                    Placeholder text
+                    The following two plots detail the relationship between the age and cause of death in infants.
                 </p>
+                <ul>
+                    <li>Death in infants is most likely to occur within the first month of life.</li>
+                    <li>The leading cause of death in infants is sudden infant death syndrome.</li>
+                    <li>Other major causes of death in infants include accidental suffocation and congenital heart malformations.</li>
+                </ul>
             </div>
             <div class="col-md-9">
                 <h3>Infant Age of Death</h3>
                 <div id="vizContainer5" style="width:900px; height:500px;"></div>
             </div>
-        </div>
-        <div>
-            <button type="button" class="btn btn-primary" onclick="javascript:switchInfantTab(-1);">Age of Death</button>
-            <button type="button" class="btn btn-primary" onclick="javascript:switchInfantTab(1);">Cause of Death</button>
         </div>
         <br>
         <div class="row">            
@@ -147,14 +161,15 @@
                 <div id="vizContainer6" style="width:900px; height:500px;"></div>
             </div>
             <div class="col-md-3">
-                <p>Placeholder text</p>
             </div>
         </div>
         <br>
         <hr>
         <div>
             <footer>
-                Courtesy of US Centers for Disease Control mortality data found on <a href="https://www.kaggle.com/cdc/mortality">Kaggle.com</a>
+                <p>View a random sample of the raw data points at our <a href="interactive.index.html">Interactive Index</a></p>
+                <p>Courtesy of US Centers for Disease Control mortality data found on <a href="https://www.kaggle.com/cdc/mortality">Kaggle.com</a>
+                </p>
             </footer>
         </div>
     </div>

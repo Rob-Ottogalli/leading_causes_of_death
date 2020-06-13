@@ -32,12 +32,7 @@ url8 = "https://public.tableau.com/views/SearchingforDeath/SearchingforDeath?:di
 
 var containerDiv9 = document.getElementById("vizContainer9"),
 //public.tableau
-url9 = "https://public.tableau.com/views/MainMortality/Seasonvs_Top5Cause?:display_count=y&publish=yes&:origin=viz_share_link"
-
-var infantList = [url5, url6];
-var vizLen = infantList.length;
-var vizCount = 0;
-var viz5 = 0;
+url9 = "https://public.tableau.com/views/TopDeathsperseasonperagepergender/TopDeathsperseasonperagepergender?:display_count=y&publish=yes&:origin=viz_share_link"
 
 options = {
     hideTabs: true,
@@ -59,27 +54,4 @@ function initViz() {
     var viz8 = new tableau.Viz(containerDiv8, url8, options);
     var viz9 = new tableau.Viz(containerDiv9, url9, options);
 
-}
-
-function switchInfantTab(vizPlusMinus) {
-    var containerDiv5 = document.getElementById("vizContainer5");
-
-    vizCount = vizCount + vizPlusMinus;
-    
-    if (vizCount >= vizLen) {
-    // Keep the vizCount in the bounds of the array index.
-        vizCount = 0;
-    } else if (vizCount < 0) {
-        vizCount = vizLen - 1;
-    }
-    
-    if (containerDiv5) { // If a viz object exists, delete it.
-        containerDiv5 = containerDiv5.innerHTML = "";
-        // document.getElementById("vizContainer5");
-
-    }
-
-    var vizURL = infantList[vizCount];
-
-    var viz10 = new tableau.Viz(containerDiv5, "https://public.tableau.com/shared/H8XTZR7ZH?:display_count=y&:origin=viz_share_link", options);
 }
