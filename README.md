@@ -22,7 +22,7 @@ By analyzing this topic: our app will identify trends that public health officia
 
 ## Link to data (Centers for Disease Control mortality data) 
 ```
-[https://www.kaggle.com/cdc/mortality?select=2005_codes.json]
+https://www.kaggle.com/cdc/mortality?select=2005_codes.json
 ```
 ## Visualization of Dashboard (and Inspiring Visualizations)
 ![](Images/dashboard_snapshot.png)
