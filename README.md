@@ -26,3 +26,5 @@ https://www.kaggle.com/cdc/mortality?select=2005_codes.json
 ```
 ## Visualization of Dashboard (and Inspiring Visualizations)
 ![](Images/dashboard_snapshot.png)
+![](Images/top5_causes_of_death.png)
+![](Images/Infant_death_cause.png)
