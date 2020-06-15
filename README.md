@@ -24,5 +24,5 @@ By analyzing this topic: our app will identify trends that public health officia
 ```
 [https://www.kaggle.com/cdc/mortality?select=2005_codes.json]
 ```
-Visualization of Dashboard (and Inspiring Visualizations)
+## Visualization of Dashboard (and Inspiring Visualizations)
 ![](Images/dashboard_snapshot.png)
