@@ -20,7 +20,9 @@ Our project will analyze mortality in America from 2013 to 2015, specifically wi
 
 By analyzing this topic: our app will identify trends that public health officials will be able to use to optimize future spending to improve public health outcomes the scenarios. 
 
-Link to data (Centers for Disease Control mortality data): [https://www.kaggle.com/cdc/mortality?select=2005_codes.json]
-
+## Link to data (Centers for Disease Control mortality data) 
+```
+[https://www.kaggle.com/cdc/mortality?select=2005_codes.json]
+```
 Visualization of Dashboard (and Inspiring Visualizations)
 ![](Images/dashboard_snapshot.png)
